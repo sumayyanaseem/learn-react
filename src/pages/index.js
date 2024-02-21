@@ -2,23 +2,29 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Profile from './qcomps/profile_mistake'
-import MyComp from './qcomps/firstcomp'
-import Bios from './qcomps/bios'
-import TodoList from './qcomps/todos'
-import Gallery from './qcomps/gallery_props'
-import Holder from './components/square'
-import PackingList from './qcomps/props_item'
+import Profile from './components/profile'
+import List from './components/list_plain';
+import ListKey from './qcomps/list_keys_id'
+import Recipe from './qcomps/recipes';
+import State from './qcomps/state';
+import StateObj from './components/stateObj'
+import Stuckform from './qcomps/stuckForm';
+import ThankYouCrash from './qcomps/thankYouCrash';
+import Snapshot from './components/snapshot2';
+import Queueupdates from './components/queueUpdates'
+import Shoppingcart from './qcomps/shoppingCart'
 export default function Home() {
   return (
     <div className={styles.main}>
-               <Profile/>
-              <MyComp/>
-              <Bios/>
-              <TodoList/>
-              <Gallery/>
-              <Holder/>
-              <PackingList/>
+                       <ListKey/>
+                      <Recipe/>
+                      <State/>
+                      <StateObj/>
+                      <Stuckform/>
+                      <ThankYouCrash/>
+                      <Snapshot/>
+                      <Queueupdates/>
+                      <Shoppingcart/>
     </div>
   )
 }
