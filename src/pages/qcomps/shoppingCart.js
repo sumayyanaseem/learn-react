@@ -8,7 +8,7 @@ export default function RequestTracker() {
     setPending(pending => pending + 1);
     await delay(3000);
     setPending(pending => pending - 1);
-    setCompleted(completed + 1);
+    setCompleted(completed => completed + 1);
   }
 
   return (
